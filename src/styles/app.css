@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply accent-black transition-colors;
+	}
+
+	body[data-mode="currency"] {
+		@apply bg-money text-white accent-white;
+	}
+
+	label {
+		cursor: pointer;
+	}
+
+	select {
+		cursor: pointer;
+		background-color: transparent;
+	}
+}
+
+@layer components {
+	.section {
+		@apply my-8 px-4;
+	}
+}
